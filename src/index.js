@@ -8,7 +8,7 @@ console.log($('#root').html('hello world'));
 
 class App extends Component {
     render() {
-        return <div>react frame content.</div>
+        return <div>fuck frame content.</div>
     }
 }
 

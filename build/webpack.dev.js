@@ -11,7 +11,6 @@ module.exports = merge({
                 test: /\.(css|less)$/,
                 use: [  // loader解析的顺序是从下到上，从右到左的顺序
                     'style-loader',  //使用MiniCssExtractPlugin时就不能使用style-loader了
-                    'vue-style-loader',
                     {
                         loader: 'css-loader',
                         options: {
