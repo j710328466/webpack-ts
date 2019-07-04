@@ -8,7 +8,7 @@ module.exports = merge({
     module: {
         rules: [
             {
-                test: /\.(css|less)$/,
+                test: /\.(css|scss)$/,
                 use: [  // loader解析的顺序是从下到上，从右到左的顺序
                     'style-loader',  //使用MiniCssExtractPlugin时就不能使用style-loader了
                     {
@@ -17,8 +17,7 @@ module.exports = merge({
                             importLoaders: 2   //该方式可以让@import引入的css文件再次执行一边css打包loader
                         }
                     },
-                    // 'sass-loader',
-                    'less-loader',
+                    'sass-loader',
                     'postcss-loader',
                 ]
             }

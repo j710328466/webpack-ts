@@ -49,7 +49,7 @@ const plugins = [
 
 module.exports = {
     entry: {
-        main: './src/index.js',
+        main: './src/index.tsx',
         about: './src/about.tsx'
     },
     output: {
